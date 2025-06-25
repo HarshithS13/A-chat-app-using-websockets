@@ -4,6 +4,7 @@ import cors from "cors";
 import { connectToDatabase } from "./db/connection";
 import chatService from "./db/services/chatService";
 import type { User, Message } from "./db/services/chatService";
+import mongoose from 'mongoose';
 
 // Constants
 const INACTIVE_TIMEOUT = 300000; // 5 minutes
